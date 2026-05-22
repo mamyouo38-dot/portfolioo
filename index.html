@@ -108,6 +108,9 @@
     .portrait-wrap { position: relative; max-width: 440px; margin: 0 0 0 auto; }
     .portrait { position: relative; width: 100%; aspect-ratio: 4/5; overflow: hidden; box-shadow: 0 40px 80px rgba(0, 0, 0, .6); }
     .portrait img { width: 100%; height: 100%; object-fit: cover; display: block; filter: contrast(1.04) saturate(.92); }
+    .portrait-placeholder { width: 100%; height: 100%; background: radial-gradient(circle at 50% 35%, rgba(212, 175, 106, .15), transparent 60%), linear-gradient(135deg, var(--ink-3) 0%, var(--emerald-deep) 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; position: relative; }
+    .portrait-placeholder .initials { font-family: var(--serif); font-style: italic; font-size: 6.5rem; font-weight: 500; background: linear-gradient(135deg, var(--gold-dk), var(--gold-lt)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; line-height: 1; }
+    .portrait-placeholder .ph-label { font-size: .55rem; font-weight: 600; letter-spacing: .3em; text-transform: uppercase; color: var(--ivory-low); }
 
     .portrait-plaque { position: absolute; top: -1.25rem; left: -1.25rem; background: var(--ink); border: 1px solid var(--gold); padding: 1rem 1.4rem; text-align: center; z-index: 3; }
     .portrait-plaque .plaque-label { font-size: .52rem; font-weight: 600; letter-spacing: .3em; text-transform: uppercase; color: var(--ivory-low); margin-bottom: .35rem; }
@@ -375,7 +378,11 @@
           </div>
 
           <div class="portrait">
-            <img src="photo_mamy.jpg" alt="Arsène Mamy" />
+            <!-- Remplacer par : <img src="ARSENE.jpg" alt="Arsène Mamy" /> -->
+            <div class="portrait-placeholder">
+              <span class="initials">AM</span>
+              <span class="ph-label">Ajouter photo</span>
+            </div>
           </div>
 
           <div class="portrait-caption">
@@ -402,9 +409,497 @@
         <span class="ticker-item accent">Acquisition</span>
         <span class="ticker-item">Marketing Digital</span>
         <span class="ticker-item accent">Content Marketing</span>
+        <span class="ticker-item">E-commerce</span>
+        <span class="ticker-item accent">Data &amp; Analytics</span>
+        <span class="ticker-item">SEO</span>
+        <span class="ticker-item accent">Social Media</span>
+        <span class="ticker-item">Python · Excel</span>
+        <span class="ticker-item accent">Acquisition</span>
       </div>
     </div>
   </section>
 
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="ed-section-head reveal">
+        <div class="ed-section-num"><small>№</small>01</div>
+        <div class="ed-section-meta">
+          <div class="ed-section-label">À propos · Profil</div>
+          <h2 class="ed-section-title">Marketing, <em>data</em><br>&amp; performance.</h2>
+        </div>
+      </div>
+
+      <div class="about-layout">
+        <aside class="about-aside reveal-left">
+          <div class="about-aside-title">L'essentiel<br>en un coup d'œil.</div>
+          <ul class="about-aside-list">
+            <li>Master Marketing Digital — Paris Panthéon-Assas / EFREI</li>
+            <li>Licence Économie &amp; Gestion — Université d'Orléans</li>
+            <li>5+ années d'expérience commerciale &amp; relation client</li>
+            <li>Maîtrise data : Python, Excel avancé, Google Analytics</li>
+            <li>Recherche d'alternance — Rentrée 2026, rythme 3j/2j</li>
+          </ul>
+        </aside>
+
+        <div class="about-body reveal-right">
+          <p class="lede">
+            Étudiant en Master Marketing Digital orienté Commerce &amp; Digital,
+            je conjugue <em>analyse économique</em>, <em>data</em> et expérience terrain
+            de la relation client.
+          </p>
+          <p>
+            Mon parcours s'est construit entre deux mondes : la rigueur statistique
+            héritée de ma <strong>Licence Économie &amp; Gestion</strong> à l'Université d'Orléans
+            (régressions, ratios, Excel avancé, Python) et l'agilité du terrain,
+            forgée par mes expériences en grande distribution chez LIDL et Castorama.
+          </p>
+          <p>
+            Passionné par les <strong>stratégies d'acquisition</strong>, le marketing de contenu
+            et la performance digitale, je cherche à contribuer à la croissance d'une marque
+            en développant des campagnes à impact <strong>mesurable</strong>.
+          </p>
+          <div class="pullquote">
+            Allier la rigueur de la data à la sensibilité du contenu pour bâtir des marques mémorables.
+          </div>
+          <p>
+            Je rejoins le Master <strong>Paris Panthéon-Assas / EFREI</strong> à la rentrée 2026
+            pour approfondir mon expertise en CRM, business intelligence et marketing stratégique
+            — et je cherche dès maintenant l'alternance qui me permettra de transformer cette
+            ambition en résultats concrets.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section id="projets">
+    <div class="section-inner">
+      <div class="ed-section-head reveal">
+        <div class="ed-section-num"><small>№</small>02</div>
+        <div class="ed-section-meta">
+          <div class="ed-section-label">Projets &amp; Réalisations · Portfolio</div>
+          <h2 class="ed-section-title">Travaux <em>sélectionnés</em>.</h2>
+        </div>
+      </div>
+
+      <div class="projects-stack">
+
+        <article class="proj-row reveal">
+          <div class="proj-num-col">
+            <div class="proj-num">01<small>Étude de marché</small></div>
+          </div>
+          <div class="proj-visual">
+            <span class="visual-tag">Stratégie</span>
+            <div class="visual-icon">D2C</div>
+          </div>
+          <div class="proj-content">
+            <div class="proj-meta-top">
+              <span class="gold-dot">●</span>
+              <span>Projet académique</span>
+              <span>·</span>
+              <span>2026</span>
+            </div>
+            <h3 class="proj-title-big">Positionnement —<br><em>Marque cosmétique D2C</em></h3>
+            <p class="proj-desc-big">
+              Analyse concurrentielle de <strong>10 marques</strong> (DTC &amp; retail), segmentation
+              clients via Python (pandas) et recommandations stratégiques. Plan de communication
+              digital construit sur 6 mois avec objectifs mesurables.
+            </p>
+            <div class="proj-tags-row">
+              <span class="tag tag-gold">Veille concurrentielle</span>
+              <span class="tag tag-emerald">Python · pandas</span>
+              <span class="tag tag-ivory">Stratégie de marque</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-row reveal">
+          <div class="proj-num-col">
+            <div class="proj-num">02<small>Social Media</small></div>
+          </div>
+          <div class="proj-visual">
+            <span class="visual-tag">+65% Engagement</span>
+            <div class="visual-icon" style="font-size: 5rem">Beauty</div>
+          </div>
+          <div class="proj-content">
+            <div class="proj-meta-top">
+              <span class="gold-dot">●</span>
+              <span>Projet professionnel</span>
+              <span>·</span>
+              <span>2022</span>
+            </div>
+            <h3 class="proj-title-big">Campagne Social Media —<br><em>Beauty Abidjan</em></h3>
+            <p class="proj-desc-big">
+              Refonte complète de la ligne éditoriale Instagram &amp; WhatsApp Business :
+              <strong>+65% d'engagement en 3 mois</strong>, calendrier de contenus hebdomadaire,
+              stories produits convertissant directement en visites boutique.
+            </p>
+            <div class="proj-tags-row">
+              <span class="tag tag-gold">Instagram</span>
+              <span class="tag tag-gold">Content marketing</span>
+              <span class="tag tag-ivory">Community management</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-row reveal">
+          <div class="proj-num-col">
+            <div class="proj-num">03<small>Data &amp; KPI</small></div>
+          </div>
+          <div class="proj-visual">
+            <span class="visual-tag emerald">Python · Excel</span>
+            <div class="visual-icon">KPI</div>
+          </div>
+          <div class="proj-content">
+            <div class="proj-meta-top">
+              <span class="gold-dot">●</span>
+              <span>Projet personnel</span>
+              <span>·</span>
+              <span>2025</span>
+            </div>
+            <h3 class="proj-title-big">Dashboard <em>de suivi des ventes</em><br>&amp; KPIs e-commerce</h3>
+            <p class="proj-desc-big">
+              Construction d'un tableau de bord <strong>Excel / Python</strong> automatisant le
+              suivi du chiffre d'affaires, du panier moyen et du taux de conversion à partir
+              de données simulées. Restitution PowerPoint orientée décision.
+            </p>
+            <div class="proj-tags-row">
+              <span class="tag tag-emerald">Python</span>
+              <span class="tag tag-emerald">Excel avancé</span>
+              <span class="tag tag-gold">KPI &amp; Reporting</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-row reveal">
+          <div class="proj-num-col">
+            <div class="proj-num">04<small>SEO &amp; Lead gen</small></div>
+          </div>
+          <div class="proj-visual">
+            <span class="visual-tag">SEO on-page</span>
+            <div class="visual-icon" style="font-size: 5rem">Site</div>
+          </div>
+          <div class="proj-content">
+            <div class="proj-meta-top">
+              <span class="gold-dot">●</span>
+              <span>Projet personnel</span>
+              <span>·</span>
+              <span>2025</span>
+            </div>
+            <h3 class="proj-title-big">Mini-site vitrine —<br><em>Tunnel de conversion</em></h3>
+            <p class="proj-desc-big">
+              Création d'un site vitrine pour une marque fictive avec
+              <strong>optimisation SEO on-page</strong> (balises, mots-clés, structure Hn)
+              et conception d'un tunnel de conversion avec formulaire de lead generation.
+            </p>
+            <div class="proj-tags-row">
+              <span class="tag tag-gold">SEO</span>
+              <span class="tag tag-emerald">Lead generation</span>
+              <span class="tag tag-ivory">UX design</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-inner">
+      <div class="ed-section-head reveal">
+        <div class="ed-section-num"><small>№</small>03</div>
+        <div class="ed-section-meta">
+          <div class="ed-section-label">Expériences professionnelles · Parcours</div>
+          <h2 class="ed-section-title">Sur le <em>terrain</em>.</h2>
+        </div>
+      </div>
+
+      <div class="exp-list">
+
+        <article class="exp-row reveal">
+          <div class="exp-date-block">
+            <div class="exp-date-main">Août 2025</div>
+            <div class="exp-date-sub">— Présent</div>
+            <div class="exp-location">Orléans, France</div>
+          </div>
+          <div class="exp-content">
+            <h3 class="exp-role-big">Équipier Polyvalent — <em>Relation Client</em></h3>
+            <div class="exp-company-line">
+              <span class="exp-company-sep"></span>
+              <span class="exp-company">LIDL · Orléans</span>
+            </div>
+            <ul class="exp-ul">
+              <li>Garantir un accueil de qualité et une expérience client optimale.</li>
+              <li>Gestion des flux produits et disponibilité des articles en rayon.</li>
+              <li>Encaissement fiable et gestion des périodes de forte affluence.</li>
+              <li>Travail en équipe dans un environnement exigeant avec objectifs quotidiens.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="exp-row reveal">
+          <div class="exp-date-block">
+            <div class="exp-date-main">2025</div>
+            <div class="exp-date-sub">Conseiller vendeur</div>
+            <div class="exp-location">Orléans, France</div>
+          </div>
+          <div class="exp-content">
+            <h3 class="exp-role-big">Conseiller Vendeur — <em>Développement des ventes</em></h3>
+            <div class="exp-company-line">
+              <span class="exp-company-sep"></span>
+              <span class="exp-company">Castorama · Orléans</span>
+            </div>
+            <ul class="exp-ul">
+              <li>Accueil, conseil et accompagnement personnalisé des clients.</li>
+              <li>Identification des besoins et proposition de solutions adaptées.</li>
+              <li>Contribution à l'atteinte des objectifs commerciaux.</li>
+              <li>Fidélisation de la clientèle et gestion des réclamations.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="exp-row reveal">
+          <div class="exp-date-block">
+            <div class="exp-date-main">2018 — 2023</div>
+            <div class="exp-date-sub">Communication</div>
+            <div class="exp-location">Abidjan, Côte d'Ivoire</div>
+          </div>
+          <div class="exp-content">
+            <h3 class="exp-role-big">Assistante Commerciale &amp; <em>Responsable Communication</em></h3>
+            <div class="exp-company-line">
+              <span class="exp-company-sep"></span>
+              <span class="exp-company">Beauty Abidjan</span>
+            </div>
+            <ul class="exp-ul">
+              <li>Animation des réseaux sociaux de la boutique (Instagram, WhatsApp Business).</li>
+              <li>Mise en place d'actions promotionnelles locales afin de stimuler le trafic et fidéliser la clientèle.</li>
+              <li>Analyse des préférences clients et remontée d'insights consommateurs.</li>
+              <li>Gestion de l'expérience client en point de vente : accueil, conseil et personnalisation de l'offre.</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMATION -->
+  <section id="formation">
+    <div class="section-inner">
+      <div class="ed-section-head reveal">
+        <div class="ed-section-num"><small>№</small>04</div>
+        <div class="ed-section-meta">
+          <div class="ed-section-label">Formation · Parcours académique</div>
+          <h2 class="ed-section-title">Apprendre, <em>analyser</em>.</h2>
+        </div>
+      </div>
+
+      <div class="edu-double">
+
+        <article class="edu-block reveal">
+          <div class="edu-period">2026 — 2028</div>
+          <h3 class="edu-degree-big">Master Marketing Digital</h3>
+          <div class="edu-school-line">Paris Panthéon-Assas / EFREI</div>
+          <p class="edu-desc-text">
+            Ingénierie commerciale · Négociation B2B complexe · Stratégie grands comptes ·
+            CRM · Marketing stratégique · Business intelligence · Conduite du changement.
+          </p>
+        </article>
+
+        <article class="edu-block reveal">
+          <div class="edu-period">Depuis 2026</div>
+          <h3 class="edu-degree-big">Licence 3 Économie &amp; Gestion</h3>
+          <div class="edu-school-line">Université d'Orléans</div>
+          <p class="edu-desc-text">
+            Analyses statistiques et financières · Régressions · Ratios économiques ·
+            Excel avancé et Python pour l'analyse de données.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPÉTENCES -->
+  <section id="competences">
+    <div class="section-inner">
+      <div class="ed-section-head reveal">
+        <div class="ed-section-num"><small>№</small>05</div>
+        <div class="ed-section-meta">
+          <div class="ed-section-label">Compétences · Index</div>
+          <h2 class="ed-section-title">Savoir-faire <em>&amp; outils</em>.</h2>
+        </div>
+      </div>
+
+      <div class="comp-index">
+
+        <div class="comp-col reveal" style="transition-delay: .05s">
+          <div class="comp-col-header">
+            <span class="comp-col-num">i.</span>
+            <span class="comp-col-name">Marketing<br>Digital</span>
+          </div>
+          <ul class="comp-col-list">
+            <li>Community Management</li>
+            <li>Content Marketing</li>
+            <li>E-mailing</li>
+            <li>SEO (notions)</li>
+            <li>Social Media Ads</li>
+          </ul>
+        </div>
+
+        <div class="comp-col reveal" style="transition-delay: .12s">
+          <div class="comp-col-header">
+            <span class="comp-col-num">ii.</span>
+            <span class="comp-col-name">E-commerce<br>&amp; Conversion</span>
+          </div>
+          <ul class="comp-col-list">
+            <li>Gestion boutique en ligne</li>
+            <li>Fiches produits</li>
+            <li>Lead generation</li>
+            <li>Suivi des conversions</li>
+          </ul>
+        </div>
+
+        <div class="comp-col reveal" style="transition-delay: .19s">
+          <div class="comp-col-header">
+            <span class="comp-col-num">iii.</span>
+            <span class="comp-col-name">Analyse<br>&amp; Data</span>
+          </div>
+          <ul class="comp-col-list">
+            <li>Excel avancé</li>
+            <li>Python</li>
+            <li>KPI &amp; Reporting</li>
+            <li>PowerPoint</li>
+            <li>Google Analytics</li>
+            <li>Shopify · Canva · Photoshop</li>
+          </ul>
+        </div>
+
+        <div class="comp-col reveal" style="transition-delay: .26s">
+          <div class="comp-col-header">
+            <span class="comp-col-num">iv.</span>
+            <span class="comp-col-name">Soft<br>Skills</span>
+          </div>
+          <ul class="comp-col-list">
+            <li>Communication</li>
+            <li>Adaptabilité</li>
+            <li>Résilience</li>
+            <li>Organisation</li>
+            <li>Esprit d'équipe</li>
+            <li>Force de proposition</li>
+            <li>Rigueur</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERETS -->
+  <section id="interets">
+    <div class="section-inner">
+      <div class="ed-section-head reveal">
+        <div class="ed-section-num"><small>№</small>06</div>
+        <div class="ed-section-meta">
+          <div class="ed-section-label">Langues &amp; Centres d'intérêt</div>
+          <h2 class="ed-section-title">Au-delà du <em>professionnel</em>.</h2>
+        </div>
+      </div>
+
+      <div class="trio-grid reveal">
+
+        <div class="trio-cell">
+          <div class="trio-symbol">i.</div>
+          <h3 class="trio-title">Langues</h3>
+          <ul class="trio-list">
+            <li><strong>Français</strong> — Courant</li>
+            <li><strong>Anglais</strong> — Opérationnel</li>
+          </ul>
+        </div>
+
+        <div class="trio-cell">
+          <div class="trio-symbol">ii.</div>
+          <h3 class="trio-title">Centres d'intérêt</h3>
+          <ul class="trio-list">
+            <li>Sport &amp; <strong>Musculation</strong></li>
+            <li>Développement personnel</li>
+            <li>Podcasts <strong>business</strong></li>
+          </ul>
+        </div>
+
+        <div class="trio-cell">
+          <div class="trio-symbol">iii.</div>
+          <h3 class="trio-title">Veille</h3>
+          <ul class="trio-list">
+            <li>Stratégies d'<strong>acquisition</strong></li>
+            <li>Marques D2C &amp; e-commerce</li>
+            <li>Tendances <strong>marketing digital</strong></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER / CONTACT -->
+  <footer id="contact">
+    <div class="footer-inner reveal">
+      <span class="footer-kicker">Édition limitée · Disponible 2026</span>
+      <h1 class="footer-title">Une alternance,<br>un <em>projet</em>,<br>une opportunité ?</h1>
+      <p class="footer-deck">
+        Disponible pour une alternance à partir de 2026<br>
+        — rythme 3 jours entreprise / 2 jours école —
+      </p>
+
+      <div class="contact-row">
+        <a href="mailto:arsenemamy2004@gmail.com" class="contact-item">
+          <div class="contact-label">E-mail</div>
+          <div class="contact-value">arsenemamy2004@gmail.com</div>
+        </a>
+        <a href="tel:+33757171296" class="contact-item">
+          <div class="contact-label">Téléphone</div>
+          <div class="contact-value">07 57 17 12 96</div>
+        </a>
+        <div class="contact-item">
+          <div class="contact-label">Localisation</div>
+          <div class="contact-value">Orléans / Paris</div>
+        </div>
+      </div>
+
+      <div class="social-row">
+        <a href="https://www.linkedin.com/in/ouo-arsene" target="_blank" rel="noopener" class="social-btn">
+          <svg fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          LinkedIn
+        </a>
+        <a href="mailto:arsenemamy2004@gmail.com" class="social-btn">
+          <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          Écrire un e-mail
+        </a>
+      </div>
+
+      <p class="footer-copy">© 2026 Folio — Arsène Mamy · Édition limitée · Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <script>
+    const hdr = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      hdr.classList.toggle('scrolled', window.scrollY > 30);
+    });
+
+    const els = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: .12 });
+    els.forEach(el => io.observe(el));
+  </script>
 </body>
 </html>
